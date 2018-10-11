@@ -1,0 +1,51 @@
+$header_size: 35px;
+$padding_unit: 5px;
+$grid_gap: 7px;
+
+#header {
+  font-size: $header_size;
+  color: red;
+}
+
+#quote-box {
+  max-width: 700px;
+  border: 1.5px solid grey;
+}
+
+.wrapper {
+  padding-left: 2*$padding_unit;
+  padding-right: $padding_unit;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $grid_gap;
+  grid-auto-rows: minmax(21px, auto);
+}
+
+.quote-main {
+  font-size: 20px;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+
+.quote-author {
+  grid-column: 4 / 5;
+  grid-row: 2;
+}
+
+.button-line {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+
+div {
+  position: relative;
+}
+
+button {
+  background-color: silver;
+  color: blue;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10%;
+  font-size: 14px;
+}
